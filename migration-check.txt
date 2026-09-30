@@ -1,1 +1,2 @@
-NorthReach deployment migrated to japventures/northreach.
+NorthReach deployment is served from japventures/northreach.
+Migration validated before source retirement.
