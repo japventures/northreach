@@ -1,2 +1,1 @@
-NorthReach deployment is served from japventures/northreach.
-Migration validated before source retirement.
+NorthReach deployment is served from japventures/northreach.\nCustom domain migration validated.\n
