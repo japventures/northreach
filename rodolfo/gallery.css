@@ -1,0 +1,57 @@
+.visual-layout{height:79%;min-height:0;display:grid;grid-template-columns:minmax(210px,.25fr) minmax(0,.75fr);gap:clamp(16px,2.4vw,36px)}
+.visual-summary{align-self:center;min-width:0}
+.visual-summary>p{color:var(--muted);font-size:12px;line-height:1.45}
+.visual-summary>a{display:inline-block;margin-top:8px;color:var(--rust);font-size:11px;font-weight:800;text-underline-offset:4px}
+.visual-gallery{min-width:0;min-height:0;display:grid;grid-template-rows:minmax(0,1fr) auto auto;border:1px solid var(--line);background:#e8e1d6;overflow:hidden}
+.visual-stage{position:relative;min-width:0;min-height:0;display:grid;place-items:center;overflow:hidden;background:linear-gradient(135deg,#ded6ca,#eee8df 48%,#d8cfc2)}
+.visual-stage:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 48%,rgba(255,255,255,.48),transparent 62%);pointer-events:none}
+.visual-image{position:relative;z-index:1;width:100%;height:100%;min-width:0;min-height:0;padding:clamp(6px,1vw,14px)}
+.visual-image.fit-contain{object-fit:contain}
+.missing-asset{position:relative;z-index:1;width:min(76%,640px);padding:clamp(26px,4vw,56px);border:1px dashed #a99f91;background:rgba(243,238,229,.86);text-align:center}
+.missing-asset strong{display:block;color:var(--forest);font-size:clamp(18px,2.2vw,32px);text-transform:uppercase;letter-spacing:.05em}
+.missing-asset span{display:block;margin-top:12px;color:var(--muted);font-size:12px;line-height:1.5}
+.visual-caption{min-height:34px;margin:0;padding:7px 11px;background:var(--forest);color:#fff;font-size:8px;line-height:1.3;text-transform:uppercase;letter-spacing:.04em}
+.visual-tabs{display:flex;gap:4px;padding:5px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;background:var(--ink)}
+.visual-tabs button{flex:1 0 auto;min-width:86px;min-height:38px;padding:7px 9px;border:0;background:transparent;color:#ddd7cc;font-size:8px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;cursor:pointer}
+.visual-tabs button:is(:hover,:focus-visible){outline:2px solid var(--sand);outline-offset:-2px;background:rgba(255,255,255,.11)}
+.visual-tabs button.is-active{background:var(--sand);color:var(--ink)}
+
+@media(max-width:900px){
+  .visual-layout{height:81%;grid-template-columns:minmax(155px,.22fr) minmax(0,.78fr);gap:12px}
+  .visual-summary>p{font-size:10px}
+  .visual-tabs button{min-width:82px}
+}
+
+/* Align the estimated-lot column consistently in the comparison table. */
+.comparison-row > :nth-child(3){justify-self:center;text-align:center}
+
+@media(max-width:600px) and (orientation:portrait){
+  .visual-layout{height:84%;grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr);gap:7px}
+  .visual-summary{display:grid;grid-template-columns:1fr auto;gap:6px;align-items:center}
+  .visual-summary .facts{margin:0}
+  .visual-summary .lot-callout{padding:4px 0;border:0}
+  .visual-summary .lot-callout strong{font-size:32px}
+  .visual-summary .lot-callout span{font-size:8px;max-width:92px}
+  .visual-summary>p{grid-column:1/-1;margin:0;font-size:8px;line-height:1.25}
+  .visual-summary>a{display:none}
+  .visual-caption{min-height:29px;padding:5px 7px;font-size:7px}
+  .visual-tabs{gap:3px;padding:4px}
+  .visual-tabs button{min-width:78px;min-height:34px;padding:5px 6px;font-size:7px}
+  .missing-asset{width:88%;padding:22px 16px}
+  .missing-asset span{font-size:9px}
+}
+
+@media(max-height:500px) and (orientation:landscape){
+  .visual-layout{height:82%;grid-template-columns:minmax(145px,.2fr) minmax(0,.8fr);gap:10px}
+  .visual-summary .facts{gap:4px;margin-bottom:5px}
+  .visual-summary .facts span{font-size:8px;padding:4px}
+  .visual-summary .lot-callout{padding:4px 0}
+  .visual-summary .lot-callout strong{font-size:32px}
+  .visual-summary .lot-callout span{font-size:8px}
+  .visual-summary>p{margin:5px 0;font-size:8px;line-height:1.2}
+  .visual-summary>a{font-size:8px}
+  .visual-caption{min-height:24px;padding:4px 6px;font-size:7px}
+  .visual-tabs{gap:2px;padding:3px}
+  .visual-tabs button{min-width:72px;min-height:27px;padding:4px 5px;font-size:7px}
+  .missing-asset{padding:18px}
+}
