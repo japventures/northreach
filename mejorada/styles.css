@@ -10,5 +10,8 @@
 @media(max-width:800px){.gallery-stage:has(.investment-sheet){overflow-y:auto;align-items:flex-start}.investment-sheet{grid-template-columns:1fr!important;padding:10px!important;gap:10px!important;height:auto;min-height:100%}.investment-table h3{font-size:15px;padding-bottom:5px}.investment-table>div{font-size:9px;padding:4px}.return-panel{padding:12px}.return-panel>strong{font-size:25px;margin:6px 0 9px}.return-panel>div{font-size:9px;padding:5px 0}.return-panel p{font-size:7px!important;margin-top:6px!important;padding-top:6px!important}}
 .gallery-tabs{grid-template-columns:repeat(4,minmax(0,1fr))}
 .gallery-tabs:has(button:nth-child(5)){grid-template-columns:repeat(5,minmax(0,1fr))}
+.elmira-interior-pair.is-active{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px;background:#fff}
+.elmira-interior-pair img{width:100%;height:100%;min-width:0;min-height:0;object-fit:contain}
+@media(max-width:800px){.elmira-interior-pair.is-active{grid-template-columns:1fr;grid-template-rows:1fr 1fr;gap:4px;padding:4px}}
 .return-panel>strong{color:#fff}.pending-return>strong{color:var(--forest)}
 .dual-visual img:last-of-type{object-fit:contain}
