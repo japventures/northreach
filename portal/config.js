@@ -1,0 +1,1 @@
+window.UNARA_AUTH_CONFIG={enabled:false,adminViewEnabled:false,clientViewEnabled:false,inviteEnabled:false,overviewEnabled:false,documentsEnabled:false,nextActionsEnabled:false,portalEnabled:false,reviewQueueEnabled:false,managementEnabled:false,userDirectoryEnabled:false,recoveryEnabled:false,allowRealEmail:false,publishableKey:''};
