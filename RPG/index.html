@@ -13,6 +13,13 @@
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
   
 body{overflow:auto}.topbar{position:static}.deck{height:auto;padding:0}.slide{display:block;height:auto;overflow:visible;padding-bottom:45px;border-bottom:1px solid var(--line)}.cover{display:grid}.controls{display:none}.model-results{margin-top:24px}.inputs{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px;margin:24px 0}.inputs label{display:grid;gap:8px}.inputs input,.inputs select{padding:10px;width:100%;font-size:1rem}.flow-table{min-width:850px}.fine{font-size:.9rem}.metric b{font-size:1.5rem}#details{width:100%;max-width:760px;margin:28px auto 0;grid-column:auto}#details>div{display:grid;grid-template-columns:minmax(0,1fr) max-content;gap:24px;align-items:baseline;padding:9px 8px;font-size:1rem;line-height:1.35}#details>div b{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}@media(max-width:600px){#details>div{gap:12px;padding:9px 0;font-size:.92rem}}
+/* Content-sized financial summary; never stretch amounts to page edge. */
+#details{display:table;width:auto!important;max-width:100%;margin:28px auto 0;grid-column:auto;border-collapse:collapse}
+#details>div{display:table-row}
+#details>div>span,#details>div>b{display:table-cell;padding:8px 0;border-bottom:1px solid var(--line);font-size:1rem;line-height:1.35}
+#details>div>span{padding-right:20px;max-width:360px}
+#details>div>b{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+@media(max-width:600px){#details{width:100%!important}#details>div>span{padding-right:12px;max-width:220px}#details>div>span,#details>div>b{font-size:.9rem}}
 </style></head><body>
 <header class="topbar"><a class="brand" href="/"><img src="/assets/northreach-logo.png" alt="NorthReach"></a><div class="topbar-meta">RPG · Build to rent</div></header><main>
 <section class="slide cover" id="portada"><div><p class="eyebrow">Propuesta RPG</p><h1 class="display">WHEATLEY<br><em>PARA RENTA</em></h1><p class="lede">Terreno $67,000 · construcción a costo · sin honorarios NorthReach ni licencia/permisos en este ejercicio.</p><span class="pill">7241 Wheatley St</span><span class="pill">1,719 SF habitables</span><span class="pill">2,249 SF totales*</span><p class="fine">*Base del paquete técnico Wheatley; confirmar superficie contratada. Construcción modelada: $215,904. No se publica tarifa de construcción por SF.</p></div><figure class="gallery-frame"><img src="/ricz-7241/wheatley-concept.jpg" alt="Conceptos originales Wheatley"><figcaption class="gallery-caption">Renders conceptuales · validar asignación final del Lote 1</figcaption></figure></section>
