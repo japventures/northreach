@@ -24,7 +24,7 @@ body{overflow:auto}.topbar{position:static}.deck{height:auto;padding:0}.slide{di
 <script>
 const usd=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:2}).format(n);
 const C={land:67000,build:2249*96,limit:245817,advance:8359,rate:.0949,fees:5778.9875};
-const loan=Math.min(C.limit,C.land+C.build),fees=C.fees+loan*.0225;
+const loan=Math.min(C.limit,C.advance+C.build),fees=C.fees+loan*.0225;
 let balance=Math.min(loan,C.advance),remaining=loan-balance;
 const stages=[{cost:C.land,draw:balance,interest:0}];
 for(let i=0;i<3;i++){let draw=Math.min(C.build/3,remaining);remaining-=draw;balance+=draw;stages.push({cost:C.build/3,draw,interest:balance*C.rate/12})}
